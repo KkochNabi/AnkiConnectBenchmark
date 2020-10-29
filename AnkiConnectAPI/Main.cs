@@ -13,9 +13,9 @@ using System.Threading.Tasks;
 
 namespace AnkiConnectAPI
 {
-    public class SendToAnki
+    public static class SendToAnki
     {
-        private static string SendRequest(string json)
+        internal static string SendRequest(string json)
         {
             var request = (HttpWebRequest)WebRequest.Create("http://localhost:8765");
             request.ContentType = "text/json";
@@ -215,23 +215,70 @@ namespace AnkiConnectAPI
     }
     public class Benchmark
     {
-        public static void SendBenchmark(int rep) //TODO: Add custom adddeck/sendtoanki functions where each card isn't separate connection
+        public static string SendBenchmark(int rep)
         {
-            var random = new RandomString();
-            string deckName = "benchmark." + random.Generate(16);
-            var fields = new List<string>() { "Front", "Back" };
-            var content = new List<string>() { "", "" };
-            var tags = new List<string>() { "benchmark" };
-            SendToAnki.CreateDeck(deckName);
-            Console.WriteLine(deckName);
-            for (int i = 0; i < rep; i++)
+            using (var ms = new MemoryStream())
             {
-                content[0] = random.Generate(32);
-                content[1] = random.Generate(32);
-                SendToAnki.AddNote(deckName, "Basic", fields, content, tags);
-            }
+                using (var writer = new Utf8JsonWriter(ms, new JsonWriterOptions { Indented = true }))
+                {
+                    var random = new RandomString();
+                    string deckName = "benchmark." + random.Generate(16);
+                    SendToAnki.CreateDeck(deckName);
+                    var fields = new List<string>() { "Front", "Back" };
+                    var tags = new List<string>() { "benchmark" };
+                    
+                    writer.WriteStartObject();
+                    writer.WriteString("action", "addNotes");
+                    writer.WriteNumber("version", 6);
 
-            SendToAnki.DeleteDeck(deckName, true);
+                    writer.WriteStartObject("params");
+                    
+                    writer.WriteStartArray("notes");
+                    for (int r = 0; r < rep; r++)
+                    {
+
+                        writer.WriteStartObject();
+                        writer.WriteString("deckName", deckName);
+                        writer.WriteString("modelName", "Basic");
+
+                        writer.WriteStartObject("fields");
+                        for (int i = 0; i < fields.Count; i++)
+                        {
+                            writer.WriteString(fields[i], random.Generate(32)); //Pretty sure it generates the same thing
+                        }
+
+                        writer.WriteEndObject(); //Fields
+                        
+                        writer.WriteStartObject("options");
+                        writer.WriteBoolean("allowDuplicate" , true);
+                        writer.WriteString("duplicateScope", "deck");
+                        writer.WriteEndObject(); //Options
+
+                        writer.WriteStartArray("tags");
+                        if (tags != null)
+                        {
+                            foreach (string i in tags)
+                            {
+                                writer.WriteStringValue(i);
+                            }
+                        }
+
+                        writer.WriteEndArray(); //Tags
+
+                        writer.WriteEndObject();
+                    }
+
+                    writer.WriteEndArray(); //Notes
+                    writer.WriteEndObject(); //Params
+                    writer.WriteEndObject(); //Main
+
+                    writer.Flush();
+                    string json = Encoding.UTF8.GetString(ms.ToArray());
+                    var response = SendToAnki.SendRequest(json);
+                    //SendToAnki.DeleteDeck(deckName, true);
+                    return response;
+                }
+            }
         }
     }
 }

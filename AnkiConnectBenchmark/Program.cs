@@ -12,15 +12,9 @@ namespace AnkiConnectBenchmark
     {
         static void Main(string[] args)
         {
-            // var fields = new List<string>() {"Front", "Back"};
-            // var content = new List<string>(){"front content", "back content"};
-            // var tags = new List<string>(){"test", "test2"};
-            //
-            // var response = SendToAnki.AddNote("test", "Basic", fields, content, tags);
-            // Console.WriteLine(response);
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-            Benchmark.SendBenchmark(10);
+            Console.WriteLine(Benchmark.SendBenchmark(20)); //1000s is where it starts to get laggy; Anki probably doesn't like importing 2k cards (lag)
             stopwatch.Stop();
             Console.WriteLine(stopwatch.Elapsed);
             Console.ReadLine();

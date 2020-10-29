@@ -4,7 +4,23 @@
     <projectFile>AnkiConnectBenchmark/AnkiConnectBenchmark.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90314432-4f08-4f9d-adee-4171edec5bad" name="Default Changelist" comment="" />
+    <list default="true" id="90314432-4f08-4f9d-adee-4171edec5bad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,8 +37,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/AnkiConnectAPI/Benchmark.cs" />
-      <option value="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" />
       <option value="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" />
+      <option value="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jUHnAMliaKumLebo6lyM2PUnjn" />
@@ -32,12 +48,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ChangesTree.GroupingKeys" value="directory" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.4263272" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.41094148" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +99,8 @@
       <workItem from="1603859225115" duration="2226000" />
       <workItem from="1603928202523" duration="46000" />
       <workItem from="1603928280440" duration="420000" />
-      <workItem from="1603928742583" duration="125000" />
+      <workItem from="1603928742583" duration="4941000" />
+      <workItem from="1603933972573" duration="294000" />
     </task>
     <servers />
   </component>
