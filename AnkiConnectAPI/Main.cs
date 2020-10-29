@@ -275,7 +275,7 @@ namespace AnkiConnectAPI
                     writer.Flush();
                     string json = Encoding.UTF8.GetString(ms.ToArray());
                     var response = SendToAnki.SendRequest(json);
-                    //SendToAnki.DeleteDeck(deckName, true);
+                    SendToAnki.DeleteDeck(deckName, true);
                     return response;
                 }
             }
