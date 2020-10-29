@@ -4,23 +4,7 @@
     <projectFile>AnkiConnectBenchmark/AnkiConnectBenchmark.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90314432-4f08-4f9d-adee-4171edec5bad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/bin/Debug/AnkiConnectAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/obj/Debug/AnkiConnectAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/bin/Debug/AnkiConnectBenchmark.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectBenchmark/obj/Debug/AnkiConnectBenchmark.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="90314432-4f08-4f9d-adee-4171edec5bad" name="Default Changelist" comment="Benchmark method actually works now" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +23,7 @@
       <option value="$PROJECT_DIR$/AnkiConnectAPI/Benchmark.cs" />
       <option value="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" />
       <option value="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jUHnAMliaKumLebo6lyM2PUnjn" />
@@ -100,8 +85,16 @@
       <workItem from="1603928202523" duration="46000" />
       <workItem from="1603928280440" duration="420000" />
       <workItem from="1603928742583" duration="4941000" />
-      <workItem from="1603933972573" duration="294000" />
+      <workItem from="1603933972573" duration="595000" />
     </task>
+    <task id="LOCAL-00001" summary="Benchmark method actually works now">
+      <created>1603934282517</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603934282517</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +120,7 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="git remote add origin https://github.com/Youkuris/AnkiConnectBenchmark.git&#10;git branch -M main&#10;git push -u origin main" />
-    <option name="LAST_COMMIT_MESSAGE" value="git remote add origin https://github.com/Youkuris/AnkiConnectBenchmark.git&#10;git branch -M main&#10;git push -u origin main" />
+    <MESSAGE value="Benchmark method actually works now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Benchmark method actually works now" />
   </component>
 </project>
