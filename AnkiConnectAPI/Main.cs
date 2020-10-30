@@ -10,6 +10,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using RandomDataGenerator.FieldOptions;
+using RandomDataGenerator.Randomizers; 
 
 namespace AnkiConnectAPI
 {
@@ -197,22 +199,7 @@ namespace AnkiConnectAPI
             }
         }
     }
-
-    internal class RandomString
-    {
-        public string Generate(int length)
-        {
-            var random = new Random();
-            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            var stringChars = new char[length];
-            for (int i = 0; i < stringChars.Length; i++)
-            {
-                stringChars[i] = chars[random.Next(chars.Length)];
-            }
-            var final = new String(stringChars);
-            return final;
-        }
-    }
+    
     public class Benchmark
     {
         public static string SendBenchmark(int rep)
@@ -221,8 +208,10 @@ namespace AnkiConnectAPI
             {
                 using (var writer = new Utf8JsonWriter(ms, new JsonWriterOptions { Indented = true }))
                 {
-                    var random = new RandomString();
-                    string deckName = "benchmark." + random.Generate(16);
+                    //var random = new RandomString();
+                    var random = RandomizerFactory.GetRandomizer(new FieldOptionsText
+                        {Min = 32, Max = 32, ValueAsString = true});
+                    var deckName = "benchmark." + random.Generate();
                     SendToAnki.CreateDeck(deckName);
                     var fields = new List<string>() { "Front", "Back" };
                     var tags = new List<string>() { "benchmark" };
@@ -234,7 +223,7 @@ namespace AnkiConnectAPI
                     writer.WriteStartObject("params");
                     
                     writer.WriteStartArray("notes");
-                    for (int r = 0; r < rep; r++)
+                    for (var r = 0; r < rep; r++)
                     {
 
                         writer.WriteStartObject();
@@ -242,9 +231,9 @@ namespace AnkiConnectAPI
                         writer.WriteString("modelName", "Basic");
 
                         writer.WriteStartObject("fields");
-                        for (int i = 0; i < fields.Count; i++)
+                        for (var i = 0; i < fields.Count; i++)
                         {
-                            writer.WriteString(fields[i], random.Generate(32)); //Pretty sure it generates the same thing
+                            writer.WriteString(fields[i], random.Generate()); //Pretty sure it generates the same thing
                         }
 
                         writer.WriteEndObject(); //Fields
@@ -255,12 +244,9 @@ namespace AnkiConnectAPI
                         writer.WriteEndObject(); //Options
 
                         writer.WriteStartArray("tags");
-                        if (tags != null)
-                        {
-                            foreach (string i in tags)
-                            {
-                                writer.WriteStringValue(i);
-                            }
+                        foreach (var i in tags)
+                        { 
+                            writer.WriteStringValue(i);
                         }
 
                         writer.WriteEndArray(); //Tags
@@ -273,7 +259,7 @@ namespace AnkiConnectAPI
                     writer.WriteEndObject(); //Main
 
                     writer.Flush();
-                    string json = Encoding.UTF8.GetString(ms.ToArray());
+                    var json = Encoding.UTF8.GetString(ms.ToArray());
                     var response = SendToAnki.SendRequest(json);
                     SendToAnki.DeleteDeck(deckName, true);
                     return response;

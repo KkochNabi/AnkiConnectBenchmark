@@ -4,7 +4,13 @@
     <projectFile>AnkiConnectBenchmark/AnkiConnectBenchmark.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90314432-4f08-4f9d-adee-4171edec5bad" name="Default Changelist" comment="Benchmark method actually works now" />
+    <list default="true" id="90314432-4f08-4f9d-adee-4171edec5bad" name="Default Changelist" comment="Benchmark method actually works now">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnkiConnectBenchmark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/AnkiConnectAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/AnkiConnectAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnkiConnectAPI/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/AnkiConnectAPI/packages.config" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,17 +19,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/b3/fc145275/0200005B.il" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5DE66FF1-1FCB-4513-8463-255B392B032B/e8/e0d6ceb1/HttpWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/da/f61e9152/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/AnkiConnectAPI/Benchmark.cs" />
-      <option value="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" />
       <option value="$PROJECT_DIR$/AnkiConnectBenchmark/Program.cs" />
       <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/AnkiConnectAPI/Main.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jUHnAMliaKumLebo6lyM2PUnjn" />
@@ -48,7 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -86,6 +87,7 @@
       <workItem from="1603928280440" duration="420000" />
       <workItem from="1603928742583" duration="4941000" />
       <workItem from="1603933972573" duration="595000" />
+      <workItem from="1604029482559" duration="361000" />
     </task>
     <task id="LOCAL-00001" summary="Benchmark method actually works now">
       <created>1603934282517</created>
