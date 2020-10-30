@@ -210,7 +210,7 @@ namespace AnkiConnectAPI
                 {
                     //var random = new RandomString();
                     var random = RandomizerFactory.GetRandomizer(new FieldOptionsText
-                        {Min = 32, Max = 32, ValueAsString = true});
+                        {UseSpecial = false,Min = 32, Max = 32, ValueAsString = true});
                     var deckName = "benchmark." + random.Generate();
                     SendToAnki.CreateDeck(deckName);
                     var fields = new List<string>() { "Front", "Back" };
